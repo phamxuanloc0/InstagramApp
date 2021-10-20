@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.instagramapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/instagram"
+        android:label="Instagram"
+        android:roundIcon="@mipmap/instagram"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.instagramapp.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.instagramapp.LoginActivity" />
+        <activity android:name="com.example.instagramapp.RegisterActivity" />
+        <activity android:name="com.example.instagramapp.MainActivity" />
+        <activity android:name="com.example.instagramapp.PostActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name="com.example.instagramapp.CommentsActivity" />
+        <activity android:name="com.example.instagramapp.OptionsActivity" />
+        <activity android:name="com.example.instagramapp.EditProfileActivity" />
+        <activity android:name="com.example.instagramapp.FollowersActivity" />
+        <activity android:name="com.example.instagramapp.StoryActivity" />
+        <activity android:name="com.example.instagramapp.AddStoryActivity"></activity>
+    </application>
+
+</manifest>
